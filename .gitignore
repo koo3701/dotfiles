@@ -1,0 +1,3 @@
+files/.zsh/local/**
+
+!files/.zsh/local/.gitkeep
