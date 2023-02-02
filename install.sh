@@ -3,7 +3,9 @@
 dir=`dirname $0`
 
 # パッケージインストール
-if type "apt" > /dev/null 2>&1; then
+if type "brew" > /dev/null 2>&1; then
+  sh $dir/.bin/brew/install.sh
+elif type "apt" > /dev/null 2>&1; then
   sh $dir/.bin/apt/install.sh
 fi
 
