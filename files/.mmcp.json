@@ -1,0 +1,28 @@
+{
+  "agents": [
+    "codex-cli"
+  ],
+  "mcpServers": {
+    "serena": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/oraios/serena",
+        "serena",
+        "start-mcp-server",
+        "--context",
+        "codex",
+        "--enable-web-dashboard",
+        "False"
+      ],
+      "env": {}
+    },
+    "npx": {
+      "command": "-y",
+      "args": [
+        "@upstash/context7-mcp@latest"
+      ],
+      "env": {}
+    }
+  }
+}
